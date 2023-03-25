@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SourceDecagono2Espe.cpp">
+    <ClCompile Include="DecagSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
