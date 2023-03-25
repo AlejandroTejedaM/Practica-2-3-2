@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <gl/glut.h> 
 
+
 void init() {
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glMatrixMode(GL_PROJECTION);
@@ -13,17 +14,17 @@ void dibujar_Decagono()
 	glBegin(GL_LINE_STRIP);
 	glColor3f(1.0, 1.0, 1.0);
 
-	glVertex2f(-63, 90);
-	glVertex2f(0, 90);
-	glVertex2f(50, 55);
-	glVertex2f(70, 0);
-	glVertex2f(50, -63);
-	glVertex2f(0, -100);
-	glVertex2f(-60, -100);
-	glVertex2f(-110, -63);
-	glVertex2f(-130, 0);
-	glVertex2f(-110, 53);
-	glVertex2f(-63, 90);
+	glVertex2f(-30, 95);
+	glVertex2f(30, 95);
+	glVertex2f(80, 60);
+	glVertex2f(100, 0);
+	glVertex2f(80, -60);
+	glVertex2f(30, -95);
+	glVertex2f(-30, -95);
+	glVertex2f(-80, -60);
+	glVertex2f(-100, 0);
+	glVertex2f(-80, 60);
+	glVertex2f(-30, 95);
 
 	glEnd();
 }
@@ -34,6 +35,20 @@ void dibujar_Estrella()
 	glBegin(GL_LINE_STRIP);
 	glPointSize(20.0f);
 	glColor3f(1.0, 1.0, 1.0);
+
+	glVertex2f(-30, 95);//-
+	glVertex2f(100, 0);//--
+	glVertex2f(-30, -95);//--
+	glVertex2f(-80, 60);//--
+	glVertex2f(80, 60);//--
+	glVertex2f(30, -95);//--
+	glVertex2f(-100, 0);//--
+	glVertex2f(30, 95);//
+	glVertex2f(80, -60);//
+	glVertex2f(-80, -60);//
+	glVertex2f(-30, 95);//
+	
+
 	glEnd();
 }
 
@@ -49,7 +64,7 @@ int main(int argc, char** argv)
 {
 	glutInit(&argc, argv); // inicia la libreria GLUT  
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // configura el modo de video inicial 
-	glutInitWindowSize(640, 540); // Tamaño de la Ventana  
+	glutInitWindowSize(690, 670); // Tamaño de la Ventana  
 	glutInitWindowPosition(500, 250);
 	glutCreateWindow("PENTAGONO  ESPECIE");
 	init();
