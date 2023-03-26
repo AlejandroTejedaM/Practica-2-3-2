@@ -12,10 +12,10 @@ struct Coordenada
 void init() {
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glMatrixMode(GL_PROJECTION);
-	gluOrtho2D(-100.0, 100.0, -100.00, 100.0);
+	gluOrtho2D(-200.0, 200.0, -200.0, 200.0);
 }
 
-void dibujar_Eptogono()
+void dibujar_Eneagono()
 {
 	glBegin(GL_LINE_STRIP);
 	glColor3f(1.0, 1.0, 1.0);
@@ -30,7 +30,6 @@ void dibujar_Eptogono()
 	glVertex2f(-100, 20);
 	glVertex2f(-65, 75);
 	glVertex2f(0, 100);
-
 	glEnd();
 
 	//glBegin(GL_LINE_STRIP);
@@ -85,7 +84,7 @@ void dibujar_Estrella()
 void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
-	dibujar_Eptogono();
+	dibujar_Eneagono();
 	dibujar_Estrella();
 	glFlush();
 }
@@ -96,7 +95,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // configura el modo de video inicial 
 	glutInitWindowSize(640, 580); // Tamaño de la Ventana  
 	glutInitWindowPosition(500, 250);
-	glutCreateWindow("PENTAGONO  ESPECIE");
+	glutCreateWindow("ENEAGONO 1 ESPECIE");
 	init();
 	glutDisplayFunc(display);
 	glutMainLoop();

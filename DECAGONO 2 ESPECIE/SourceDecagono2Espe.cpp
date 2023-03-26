@@ -52,7 +52,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // configura el modo de video inicial 
 	glutInitWindowSize(640, 580); // Tamaño de la Ventana  
 	glutInitWindowPosition(500, 250);
-	glutCreateWindow("PENTAGONO  ESPECIE");
+	glutCreateWindow("PENTAGONO 1 ESPECIE");
 	init();
 	glutDisplayFunc(display);
 	glutMainLoop();

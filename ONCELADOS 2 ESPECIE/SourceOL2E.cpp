@@ -12,7 +12,7 @@ struct Coordenada
 void init() {
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glMatrixMode(GL_PROJECTION);
-	gluOrtho2D(-100.0, 100.0, -100.00, 100.0);
+	gluOrtho2D(-200.0, 200.0, -200.0, 200.0);
 }
 
 void dibujar_Once_Lados()
@@ -97,7 +97,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // configura el modo de video inicial 
 	glutInitWindowSize(640, 580); // Tamaño de la Ventana  
 	glutInitWindowPosition(500, 250);
-	glutCreateWindow("PENTAGONO  ESPECIE");
+	glutCreateWindow("ONCELADOS 2 ESPECIE");
 	init();
 	glutDisplayFunc(display);
 	glutMainLoop();
