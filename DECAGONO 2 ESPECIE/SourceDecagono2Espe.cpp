@@ -16,7 +16,6 @@ void dibujar_Pentagono()
 	glVertex2f(-29, -40);
 	glVertex2f(29, -40);
 	glVertex2f(47, 16);
-
 	glEnd();
 
 }
