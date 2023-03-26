@@ -21,16 +21,16 @@ void dibujar_Once_Lados()
 	glColor3f(1.0, 1.0, 1.0);
 
 	glVertex2f(0, 100);
-	glVertex2f(-55, 85); 
-	glVertex2f(-90, 40); 
-	glVertex2f(-100, -15); 
-	glVertex2f(-75, -65); 
-	glVertex2f(-30, -95); 
-	glVertex2f(30, -95); 
-	glVertex2f(75, -65); 
-	glVertex2f(100, -15); 
+	glVertex2f(-55, 85);
+	glVertex2f(-90, 40);
+	glVertex2f(-100, -15);
+	glVertex2f(-75, -65);
+	glVertex2f(-30, -95);
+	glVertex2f(30, -95);
+	glVertex2f(75, -65);
+	glVertex2f(100, -15);
 	glVertex2f(90, 40);
-	glVertex2f(55, 85); 
+	glVertex2f(55, 85);
 	glVertex2f(0, 100);
 
 	//glBegin(GL_LINE_STRIP);
@@ -67,18 +67,18 @@ void dibujar_Estrella()
 
 	glColor3f(1.0, 1.0, 1.0);
 
-	glVertex2f(-55, 85);//
-	glVertex2f(55, 85);//
-	glVertex2f(100, -15);//
-	glVertex2f(30, -95);//
-	glVertex2f(-75, -65);//
-	glVertex2f(-90, 40);//
 	glVertex2f(0, 100);//
-	glVertex2f(90, 40);//
 	glVertex2f(75, -65);//
+	glVertex2f(-100, -15);//
+	glVertex2f(55, 85);//
+	glVertex2f(30, -95);//
+	glVertex2f(-90, 40);//
+	glVertex2f(90, 40);//
 	glVertex2f(-30, -95);//
-	glVertex2f(-100, -15);
 	glVertex2f(-55, 85);//
+	glVertex2f(100, -15);//
+	glVertex2f(-75, -65);//
+	glVertex2f(0, 100);//
 
 	glEnd();
 }

@@ -21,28 +21,29 @@ void dibujar_Once_Lados()
 	glColor3f(1.0, 1.0, 1.0);
 
 	glVertex2f(0, 100);
-	glVertex2f(-55, 85); 
-	glVertex2f(-90, 40); 
-	glVertex2f(-100, -15); 
-	glVertex2f(-75, -65); 
-	glVertex2f(-30, -95); 
-	glVertex2f(30, -95); 
-	glVertex2f(75, -65); 
-	glVertex2f(100, -15); 
-	glVertex2f(90, 40);
-	glVertex2f(55, 85); 
+	glVertex2f(50, 87);
+	glVertex2f(87, 50);
+	glVertex2f(100, 0);
+	glVertex2f(87, -50);
+	glVertex2f(50, -87);
+	glVertex2f(0, -100);
+	glVertex2f(-50, -87);
+	glVertex2f(-87, -50);
+	glVertex2f(-100, 0);
+	glVertex2f(-87, 50);
+	glVertex2f(-50, 87);
 	glVertex2f(0, 100);
 
-	//glBegin(GL_LINE_STRIP);
-	//glColor3f(1.0, 1.0, 1.0);
+	/*glBegin(GL_LINE_STRIP);
+	glColor3f(1.0, 1.0, 1.0);*/
 
-	//Coordenada coordenadas[12];
+	//Coordenada coordenadas[13];
 
 	//float radio = 100; // radio del polígono
-	//float angulo = 2 * 3.14159265 / 11; // ángulo entre dos vértices consecutivos
+	//float angulo = 2 * 3.14159265 / 12; // ángulo entre dos vértices consecutivos
 	//float x, y;
 
-	//for (int i = 0; i <= 11; i++) {
+	//for (int i = 0; i <= 12; i++) {
 	//	// coordenadas polares para cada vértice
 	//	x = radio * sin(angulo * i);
 	//	y = radio * cos(angulo * i);
@@ -54,7 +55,7 @@ void dibujar_Once_Lados()
 
 	//glEnd();
 
-	//for (int i = 0; i < 12; i++) {
+	//for (int i = 0; i < 13; i++) {
 	//	cout << "Coordenada " << i + 1 << ": (" << coordenadas[i].x << ", " << coordenadas[i].y << ")" << endl;
 	//}
 }
@@ -67,18 +68,18 @@ void dibujar_Estrella()
 
 	glColor3f(1.0, 1.0, 1.0);
 
-	glVertex2f(-55, 85);//
-	glVertex2f(55, 85);//
-	glVertex2f(100, -15);//
-	glVertex2f(30, -95);//
-	glVertex2f(-75, -65);//
-	glVertex2f(-90, 40);//
 	glVertex2f(0, 100);//
-	glVertex2f(90, 40);//
-	glVertex2f(75, -65);//
-	glVertex2f(-30, -95);//
-	glVertex2f(-100, -15);
+	glVertex2f(30, -95);//
 	glVertex2f(-55, 85);//
+	glVertex2f(75, -65);//
+	glVertex2f(-90, 40);//
+	glVertex2f(100, -15);//
+	glVertex2f(-100, -15);
+	glVertex2f(90, 40);//
+	glVertex2f(-75, -65);//
+	glVertex2f(55, 85);//
+	glVertex2f(-30, -95);//
+	glVertex2f(0, 100);//
 
 	glEnd();
 }
